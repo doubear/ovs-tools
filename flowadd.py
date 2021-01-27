@@ -55,10 +55,10 @@ def addflow():
                 ip1[3] += 1 
                 ip2[3] += 1
             else:
-                ip2[1] += 1
-                ip2[1] = 0
-                ip1[1] += 1
-                ip1[1] = 0
+                ip2[2] += 1
+                ip2[3] = 0
+                ip1[2] += 1
+                ip1[3] = 0
         print("+" * 50)
     os.system("ovs-ofctl dump-flows " + br)
     
@@ -106,10 +106,10 @@ def delflow():
                 ip1[3] += 1 
                 ip2[3] += 1
             else:
-                ip2[1] += 1
-                ip2[1] = 0
-                ip1[1] += 1
-                ip1[1] = 0
+                ip2[2] += 1
+                ip2[3] = 0
+                ip1[2] += 1
+                ip1[3] = 0
         print("+" * 50)
     os.system("ovs-ofctl dump-flows " + br) 
 
