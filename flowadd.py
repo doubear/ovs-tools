@@ -29,7 +29,7 @@ def addflow():
                 ip1[3] += 1 
             else:
                 ip1[2] += 1
-                ip1[3] = 0
+                ip1[3] = 1
         print("+" * 100)
     elif ipdst == "0" and ipstart != "0":
         for num in range(int(flownum)):
@@ -41,7 +41,7 @@ def addflow():
                 ip2[3] += 1 
             else:
                 ip2[2] += 1
-                ip2[3] = 0
+                ip2[3] = 1
         print("+" * 100)
     else:
         for num in range(int(flownum)):
@@ -85,7 +85,7 @@ def delflow():
                 ip1[3] += 1 
             else:
                 ip1[2] += 1
-                ip1[3] = 0
+                ip1[3] = 1
         print("+" * 100)
     elif ipdst == "0" and ipstart != "0":
         for num in range(int(flownum)):
@@ -95,7 +95,7 @@ def delflow():
                 ip2[3] += 1
             else:
                 ip2[2] += 1
-                ip2[3] = 0
+                ip2[3] = 1
         print("+" * 100)
     else:
         for num in range(int(flownum)):
